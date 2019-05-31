@@ -65,6 +65,11 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+header, main, footer {
+	margin: auto;
+	width: 876px;
+}
+
 a {
 	text-decoration: none;
 	color: grey;
@@ -77,36 +82,42 @@ a {
 
 .nav-image a {
 	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav {
+	
 }
 
 h2 {
 	font-size: 200%;
-	vertical-align: middle;
-}
-
-header, main, footer {
-	margin: auto;
-	width: 876px;
 }
 
 div {
-	display: inline-block;
+	display: flex;
 	margin-bottom: 30px;
 }
 
 header {
 	padding-top: 20px;
+	display: flex;
+	align-items: center;
 }
 
 .header-content {
-	text-align: center;
+	padding-top: 20px;
+	display: flex;
+	align-items: center;
 }
 
 footer {
-	text-align: center;
+	
 	margin: 30 px auto;
 	margin-top: 50px;
 	font-size: 80%;
+	display: flex;
+	justify-content: center;
 }
 
 section {
@@ -114,36 +125,44 @@ section {
 }
 
 .one-third {
-	width: 33%
+	width: 33%;
+	display: flex;
+	flex-direction: column;
 }
 
 .one-half {
 	width: 49.5%;
+	display: flex;
+	flex-direction: column;
 }
 
 .top-content {
 	border-top: 1px solid;
 	padding-top: 30px;
+	display: flex;
 }
 
 .bottom-content {
 	border-bottom: 1px solid;
+	display: flex;
 }
 
 .cta {
 	font-size: 200%;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
 .cta p {
-	text-align: center;
+	
 }
 
 .button {
 	color: black;
 	font-size: 40%;
 	border: 1px solid black;
-	padding: 2px 30px
+	padding: 2px 30px;
 }
 
 p a {
